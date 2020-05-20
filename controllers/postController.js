@@ -1,4 +1,4 @@
-const Post = require("../models/post");
+const Post = require("../models/Post");
 
 exports.viewCreateScreen = function (req, res) {
   res.render("create-post");
@@ -29,7 +29,7 @@ exports.apiCreate = function (req, res) {
 }
 
 exports.viewSingle = async function (req, res) {
-  console.log("Visitor ID ", req.visitorId)
+  console.log("Visitor ID ", req.visitorId);
   try {
     let post = await Post.findSingleById(req.params.id, req.visitorId);
     res.render("post", {

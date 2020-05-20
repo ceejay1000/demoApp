@@ -36,9 +36,9 @@ router.post("/post/:id/delete", userController.mustBeLoggedIn, postController.de
 
 router.post("/search", postController.search);
 
-router.post("/doesUsernameExist", userController.doesUsernameExist)
+router.post("/doesUsernameExist", userController.doesUsernameExist);
 
-router.post("/doesEmailExist", userController.doesEmailExist)
+router.post("/doesEmailExist", userController.doesEmailExist);
 
 
 // Follow related routes

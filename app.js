@@ -5,6 +5,8 @@ const flash = require("connect-flash");
 const markDown = require("marked");
 const sanitizeHTML = require("sanitize-html");
 const csrf = require("csurf");
+
+// express middleware
 app.use(express.urlencoded({
   extended: false
 }));
