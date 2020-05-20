@@ -12,7 +12,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
-app.use("/api", require("./router-api"))
+//app.use("/api", require("./router-api"));
 
 // Stores User session in mongodb
 const MongoStore = require("connect-mongo")(session);
